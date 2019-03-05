@@ -3,7 +3,7 @@
 ## Table of contents
 
 - [Files](#Files)
-- [Environment setup](#Environment setup)
+- [Environment setup](#Environment-setup)
 - [Dataset](#Dataset)
 - [Train method](#Train-method)
 - [Evaluation](#Evaluation)
