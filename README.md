@@ -18,10 +18,10 @@ Some experimental records of experiments of choosing SEFCNN network depth, inclu
 * training/NN_TEST.py : test the generalization power of the saved checkpoints.
 
 ## Training
-* SEFCNN models can be trained with a pixel-wise loss function with train.py.Default for SEFCNN is mean squared error.<br>
+* WDSR models can be trained with a pixel-wise loss function with NN_RUN.py.Default for WDSR is mean squared error.<br>
 For example,
 
-        python VDSRUNK.py >>./train_log/VDSRx15_SE_qp37.log 2>&1
+        python NN_RUN.py
 
     VDSRx15_SE_qp37.log is the file you want to redirect the output to, which you can change at will.
 
