@@ -26,6 +26,7 @@ The following packages are required:
 
 ## Dataset
 To start training the CL+VL+TH model, first download the dataset, available at http://www.statmt.org/lm-benchmark/, and extract it into the ./data directory.  在线学习，mini-batch权衡trade off效率和显存,
+The images in the dataset are all in the YUV format.
 
 ## Train method
 To train the model, the initial learning rate is set to 0.0001. The learning rate is adjusted with the step strategy using gamma=0.5. In our implementation, the learning rate is multiplied by 0.5 every 180 epochs in QP=52 for the intra coding. In terms of the inter coding, the learning rate is halved per 80 epochs in QP=52. And, Small QP may converge faster.
