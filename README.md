@@ -2,8 +2,7 @@
    <img width="180" height="150" src="images/logo.png"/>
    <h1>AV1_WARN</h1>
 </div>
-Some experimental records of experiments of choosing SEFCNN network depth, including whether to add SE block and <br>
-layer selection of SE block.And I'd like to share some commands for training.
+Some experimental records of experiments of choosing SEFCNN network depth, including whether to add SE block and layer selection of SE block.And I'd like to share some commands for training.
 
 ## Table of contents
 
