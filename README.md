@@ -1,14 +1,13 @@
-<div align=center>
-   <img width="180" height="150" src="images/logo.png"/>
-   <h1>AV1_WARN</h1>
-</div>
-Some experimental records of experiments of choosing SEFCNN network depth, including whether to add SE block and layer selection of SE block.And I'd like to share some commands for training.
+# Some experimental records of experiments of choosing SEFCNN network depth, including whether to add SE block and layer selection of SE block.And I'd like to share some commands for training.
+the training code, methodology and instructions.
 
 ## Table of contents
 
 - [Files](#Files)
 - [Training](#Training)
 - [Testing](#testing)
+- [Instructions](#instructions)
+- [FAQ](#FAQ)
 
 ## Files
 * training/NN_RUN.py : main training file.
@@ -40,4 +39,7 @@ For example,
 
         python VDSRTEST.py >>./train_log/VDSRx15_SE_qp37_Test.log 2>&1
 
+## Instructions
+
+## FAQ
 
