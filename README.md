@@ -17,7 +17,7 @@
 ## Train method
 
 ## Instructions
-### Training
+### 2.Training
 
 * WDSR models can be trained with a pixel-wise loss function with NN_RUN.py.Default for WDSR is mean squared error.<br>
 For example,
@@ -37,7 +37,7 @@ For example,
     The `--logdir` option sets the location point to the log directory of the job.If you still have difficulty,you can refer to the <br>
     https://www.jianshu.com/p/d8f9b0dfacdb.
 
-### Testing
+### 3.Testing
 
         python VDSRTEST.py >>./train_log/VDSRx15_SE_qp37_Test.log 2>&1
 
