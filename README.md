@@ -3,6 +3,7 @@
 ## Table of contents
 
 - [Files](#Files)
+- [Environment setup](#Environment setup)
 - [Dataset](#Dataset)
 - [Train method](#Train-method)
 - [Evaluation](#Evaluation)
@@ -16,8 +17,15 @@
   of the [NTIRE 2018](http://www.vision.ee.ethz.ch/ntire18/) super-resolution challenge.
 * training/NN_TEST.py : test the generalization power of the saved checkpoints.
 
-## Dataset
+## Environment setup
 
+The following packages are required:
+* TensorFlow
+* Python
+* pillow
+
+## Dataset
+To start training the CL+VL+TH model, first download the dataset, available at http://www.statmt.org/lm-benchmark/, and extract it into the ./data directory.  在线学习，mini-batch权衡trade off效率和显存,
 
 ## Train method
 To train the model, the initial learning rate is set to 0.0001. The learning rate is adjusted with the step strategy using gamma=0.5. In our implementation, the learning rate is multiplied by 0.5 every 180 epochs in QP=52 for the intra coding. In terms of the inter coding, the learning rate is halved per 80 epochs in QP=52. And, Small QP may converge faster.
@@ -38,8 +46,7 @@ For example,
 
         tensorboard --logdir=logs
         
-    The `--logdir` option sets the location point to the log directory of the job.If you still have difficulty in launching tensorboard,you can refer to the <br>
-    https://www.jianshu.com/p/d8f9b0dfacdb.
+    The `--logdir` option sets the location point to the log directory of the job.If you still have difficulty in launching tensorboard,you can refer to the https://www.jianshu.com/p/d8f9b0dfacdb.
 
 ## Evaluation
 
