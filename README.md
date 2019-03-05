@@ -12,9 +12,11 @@ layer selection of SE block.And I'd like to share some commands for training.
 - [Testing](#testing)
 
 ## Files
-* experiment_results : include the results of performance of the model by validation
-* HM_MODELS/checkpoints : include model files created during the training period
-* HM_MODELS/logs : event files, which contain the information that TensorBoard use to create the visualization.
+* training/NN_RUN.py : main training file.
+* training/UTILS.py : defines some functions that need to be used in the training process, such as how to load the data set and how to calculate PSNR.
+* training/WDSR.py : A TensorFlow-based implementation of [Wide Activation for Efficient and Accurate Image Super-Resolution](https://arxiv.org/abs/1808.08718) (WDSR), winner 
+  of the [NTIRE 2018](http://www.vision.ee.ethz.ch/ntire18/) super-resolution challenge.
+* training/NN_TEST.py : test the generalization power of the saved checkpoints.
 
 ## Training
 * SEFCNN models can be trained with a pixel-wise loss function with train.py.Default for SEFCNN is mean squared error.<br>
