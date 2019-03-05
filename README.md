@@ -3,7 +3,7 @@
 ## Table of contents
 
 - [Files](#Files)
-- [Train method](#Train method)
+- [Train method](#Train-method)
 - [Instructions](#instructions)
 - [FAQ](#FAQ)
 
